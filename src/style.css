@@ -10,7 +10,7 @@ body {
     margin: 0;
 }
 
-body {
+#content {
     display: grid;
     grid-template-rows: 1fr 8.5fr 1fr;
     width: 100vw;
@@ -41,7 +41,7 @@ a {
     color: white;
 }
 
-#content {
+#main-content {
     border-top: 2px solid gold;
     border-bottom: 2px solid gold;
     display: grid;
