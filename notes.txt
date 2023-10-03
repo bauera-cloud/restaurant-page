@@ -1,0 +1,10 @@
+inspiration: https://ginnerzapata.github.io/restaurant/
+
+project goal: practice ES6 Modules and Webpack
+
+plan: 
+    create a homepage with html
+    recreate it using js.
+        put everything that makes it into its own file
+        export it
+        import it into index.js and call function - initialPageLoad()
