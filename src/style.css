@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: 'MyFont';
+    src: url('./font.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
 
 * {
     box-sizing: border-box;
@@ -6,19 +11,28 @@
 
 html,
 body {
+    font-family: 'MyFont';
     padding: 0;
     margin: 0;
 }
 
 #content {
-    display: grid;
-    grid-template-rows: 1fr 8.5fr 1fr;
-    width: 100vw;
-    height: 100vh;
     background: center url("./emma-houghton-vXgLGbN-VDc-unsplash.jpg");
     color: white;
     font-weight: bolder;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 8.5fr 1fr;
 }
+
+/* for way #1 */
+/* #content>div {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 8.5fr 1fr;
+} */
 
 nav {
     display: grid;
@@ -41,11 +55,37 @@ a {
     color: white;
 }
 
-#main-content {
+/* .main-content should only have top and bottom border. */
+/* display and justify-content will only apply to homepage */
+.main-content {
     border-top: 2px solid gold;
     border-bottom: 2px solid gold;
+}
+
+#homepage-content {
     display: grid;
     justify-content: center;
+}
+
+#about-page {
+    display: flex;
+    /* grid-template-rows: 1fr 1fr; */
+    background-color: rgb(250, 250, 250);
+    color: rgb(102, 102, 102);
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#about-page * {
+    position: relative;
+    bottom: 200px;
+}
+
+#about-page p {
+    max-width: 50%;
+    margin: 0 auto;
 }
 
 
