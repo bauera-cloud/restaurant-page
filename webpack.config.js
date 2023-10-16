@@ -6,7 +6,7 @@ module.exports = {
     //loads assets into index.js
     entry: {
         index: './src/index.js',
-        homepage: './src/homepage.js',
+        // homepage: './src/homepage.js',
         // partials: './src/partials.js',
     },
     devtool: 'inline-source-map',

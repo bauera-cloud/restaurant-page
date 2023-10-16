@@ -24,9 +24,8 @@ const lorem = new LoremIpsum({
 
 let aboutContent = document.createElement('div');
 aboutContent.setAttribute('id', 'about-page')
+aboutContent.setAttribute('class', 'main-content')
 
-let mainContentDiv = document.createElement('div')
-mainContentDiv.setAttribute('class', 'main-content')
 let restaurantName = document.createElement('h1')
 restaurantName.textContent = 'LICENSE TO GRILL'
 let aboutParagraph = document.createElement('p');
@@ -34,8 +33,5 @@ aboutParagraph.textContent = lorem.generateSentences(5);
 aboutContent.appendChild(restaurantName)
 aboutContent.appendChild(aboutParagraph)
 
-aboutContent.appendChild(navbar)
-aboutContent.appendChild(mainContentDiv)
-aboutContent.appendChild(footer)
 
 export default aboutContent 

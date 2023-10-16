@@ -1,5 +1,5 @@
-import homepageContent from "./homepage.js";
 import { navbar, footer } from "./partials.js";
+import homepageContent from "./homepage.js";
 import aboutContent from "./about.js";
 import './style.css';
 
@@ -8,7 +8,7 @@ contentDiv.setAttribute('id', 'content');
 
 
 contentDiv.appendChild(navbar)
-contentDiv.appendChild(homepageContent)
+contentDiv.appendChild(aboutContent)
 contentDiv.appendChild(footer)
 
 document.body.appendChild(contentDiv)

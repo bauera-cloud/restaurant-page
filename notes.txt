@@ -4,6 +4,10 @@ project goal: practice ES6 Modules and Webpack
 
 plan: 
 
+goal for today: 
+    make and style menu page
+    get about and menu pages working with links
+
 //index.js
 import { navbar, footer } from './partials.js'
 import homepageContent from './homepage.js'
@@ -45,7 +49,3 @@ if user clicks menu
     content.removeChild()
     content.appendChild(menuContent) //menuContent is the div (that includes partials) from menu.js
 
-I like the 3rd option the most
-
-//POSSIBLE SOLUTION: https://webpack.js.org/guides/output-management/
-//importing div from another file
