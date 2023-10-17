@@ -6,46 +6,15 @@ plan:
 
 goal for today: 
     make and style menu page
-    get about and menu pages working with links
+    make sure the menu link works
 
-//index.js
-import { navbar, footer } from './partials.js'
-import homepageContent from './homepage.js'
-import menuContent from './menu.js'
-import aboutContent from './about.js'
 
-load homepage
-    content.appendChild(navbar)
-    content.appendChild(homepageContent)
-    content.appendChild(footer)
 
-1st option:
-add and remove div from between the navbar div and footer div
 
-if user clicks menu 
-    remove mainContentDiv
-    add menuContent
-if user clicks about
-    remove mainContentDiv
-    add aboutContent
-if user clicks home
-    remove mainContentDiv
-    add homepageContent
-
-??2nd option
-mainContentDiv = homepageContent
-if user clicks menu
-    mainContentDiv = menuContent
-if user clicks about
-    mainContentDiv = aboutContent
-if user clicks home
-    mainContentDiv = homepageContent
-
-3rd option: 
+Other option:
 homepage.js etc. uses the partials, add div to content
 if user clicks menu link in the nav bar, delete div from content, add menu div to content
 
 if user clicks menu
     content.removeChild()
     content.appendChild(menuContent) //menuContent is the div (that includes partials) from menu.js
-

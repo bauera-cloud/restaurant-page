@@ -1,4 +1,5 @@
 const path = require('path');
+const json5 = require('json5');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -44,6 +45,13 @@ module.exports = {
             {
                 test: /\.(csv|tsv)$/i,
                 use: ['csv-loader'],
+            },
+            {
+                test: /\.json5$/i,
+                type: 'json',
+                parser: {
+                    parse: json5.parse,
+                },
             },
         ],
     },

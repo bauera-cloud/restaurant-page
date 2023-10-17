@@ -9,7 +9,6 @@
 </div> */}
 
 import { LoremIpsum } from "lorem-ipsum";
-import { navbar, footer } from "./partials";
 
 const lorem = new LoremIpsum({
     sentencesPerParagraph: {

@@ -1,12 +1,13 @@
-function changeMainContent() {
+function changeMainContent(link) {
     let mainContent = document.querySelector('.main-content');
-    if (link.id === 'about') {
+    if (link.target.id === 'about') {
         mainContent.replaceWith(aboutContent)
-    } else if (link.id === 'home') {
+    } else if (link.target.id === 'home') {
         mainContent.replaceWith(homepageContent)
     } else if (link.id === 'menu') {
-        mainContent.replaceWith(homepageContent)
+        // mainContent.replaceWith(menuContent)
     }
 }
+
 
 export { changeMainContent }
