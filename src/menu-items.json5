@@ -1,7 +1,6 @@
-// menu.item.title
-//menu.item.description
+// menu.items[0].name
+//menu.items[0].description
 {
-    // comment
     items: [
         {
             name: 'burrito',
@@ -15,12 +14,5 @@
             name: 'quesadilla',
             price: 5
         },
-    ],
-    owner: {
-      name: 'Tom Preston-Werner',
-      organization: 'GitHub',
-      bio: 'GitHub Cofounder & CEO\n\
-  Likes tater tots and beer.',
-      dob: '1979-05-27T07: 32: 00.000Z',
-    },
+    ]
 }
